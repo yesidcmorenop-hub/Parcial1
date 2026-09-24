@@ -1,4 +1,4 @@
-package org.example.parcial1.model;
+package org.example.parcial1.app;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

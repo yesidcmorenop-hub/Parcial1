@@ -13,12 +13,38 @@ public class Gimnasio {
     private ArrayList<Inscripcion>listInscripcion;
     private ArrayList<PlanEntrenamiento>listPlanEntrenamiento;
     private ArrayList<Entrenador>listEntrenador;
+    private static Gimnasio instance;
+
+    /**
+     * constructor de gimnasio
+     * @param nombre de gimnasio
+     * @param nit de gimnasio
+     * @param telefono de gimnasio
+     * @param correo de gimnasio
+     * @param paginaWeb de gimnasio
+     */
     public Gimnasio(String nombre, int nit, int telefono, String correo, String paginaWeb) {
         this.nombre = nombre;
         this.nit = nit;
         this.telefono = telefono;
         this.correo = correo;
         this.paginaWeb = paginaWeb;
+        this.listCliente = new ArrayList<>();
+        this.listInscripcion = new ArrayList<>();
+        this.listPlanEntrenamiento = new ArrayList<>();
+        this.listEntrenador = new ArrayList<>();
+    }
+
+    /**
+     * creacion de la instancia unica de Gimnasio
+     * @return instancia
+     */
+    public static Gimnasio getInstance() {
+        if (instance == null) {
+            instance=new Gimnasio("Gimnacio Pa Flacos",10101001,
+                    222,"Gimnacio@","gimnacio.com");
+        }
+        return instance;
     }
 
     public String getNombre() {
@@ -61,6 +87,38 @@ public class Gimnasio {
         this.paginaWeb = paginaWeb;
     }
 
+    public ArrayList<Cliente> getListCliente() {
+        return listCliente;
+    }
+
+    public void setListCliente(ArrayList<Cliente> listCliente) {
+        this.listCliente = listCliente;
+    }
+
+    public ArrayList<Inscripcion> getListInscripcion() {
+        return listInscripcion;
+    }
+
+    public void setListInscripcion(ArrayList<Inscripcion> listInscripcion) {
+        this.listInscripcion = listInscripcion;
+    }
+
+    public ArrayList<PlanEntrenamiento> getListPlanEntrenamiento() {
+        return listPlanEntrenamiento;
+    }
+
+    public void setListPlanEntrenamiento(ArrayList<PlanEntrenamiento> listPlanEntrenamiento) {
+        this.listPlanEntrenamiento = listPlanEntrenamiento;
+    }
+
+    public ArrayList<Entrenador> getListEntrenador() {
+        return listEntrenador;
+    }
+
+    public void setListEntrenador(ArrayList<Entrenador> listEntrenador) {
+        this.listEntrenador = listEntrenador;
+    }
+
     /**
      * Busca un cliente mediante su número de teléfono.
      */
@@ -97,23 +155,45 @@ public class Gimnasio {
         return false;
     }
 
+    /**
+     * metodo para registrar a un cliente
+     * @param cliente
+     */
     public void registrarCliente(Cliente cliente) {
-        if (this.listCliente == null) this.listCliente = new ArrayList<>();
-        this.listCliente.add(cliente);
+        if (cliente!= null && !this.listCliente.contains(cliente)) {
+            this.listCliente.add(cliente);
+        }
+
     }
 
+    /**
+     * metodo para registrar a un entrenador
+     * @param entrenador
+     */
     public void registrarEntrenador(Entrenador entrenador) {
-        if (this.listEntrenador == null) this.listEntrenador = new ArrayList<>();
-        this.listEntrenador.add(entrenador);
+        if (entrenador != null && !this.listEntrenador.contains(entrenador)) {
+            this.listEntrenador.add(entrenador);
+        }
+
     }
 
+    /**
+     * metodo para registrar un plan
+     * @param plan
+     */
     public void registrarPlan(PlanEntrenamiento plan) {
-        if (this.listPlanEntrenamiento == null) this.listPlanEntrenamiento = new ArrayList<>();
-        this.listPlanEntrenamiento.add(plan);
+        if (plan != null && !this.listPlanEntrenamiento.contains(plan)) {
+            this.listPlanEntrenamiento.add(plan);
+        }
     }
 
+    /**
+     * metodo para registrar una inscripcion
+     * @param inscripcion
+     */
     public void registrarInscripcion(Inscripcion inscripcion) {
-        if (this.listInscripcion == null) this.listInscripcion = new ArrayList<>();
-        this.listInscripcion.add(inscripcion);
+        if (inscripcion != null && !this.listInscripcion.contains(inscripcion)) {
+            this.listInscripcion.add(inscripcion);
+        }
     }
 }

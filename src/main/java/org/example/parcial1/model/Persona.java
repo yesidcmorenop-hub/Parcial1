@@ -3,9 +3,9 @@ package org.example.parcial1.model;
 public abstract class Persona {
     protected String nombre;
     protected int documento;
-    protected int telefono;
+    protected long telefono;
 
-    public Persona(String nombre, int documento, int telefono) {
+    public Persona(String nombre, int documento, long telefono) {
         this.nombre = nombre;
         this.documento = documento;
         this.telefono = telefono;
@@ -27,7 +27,7 @@ public abstract class Persona {
         this.documento = documento;
     }
 
-    public int getTelefono() {
+    public long getTelefono() {
         return telefono;
     }
 

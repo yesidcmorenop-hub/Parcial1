@@ -4,31 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7627def1-822e-47b2-988c-491759592a6c" name="Changes" comment="" />
+    <list default="true" id="7627def1-822e-47b2-988c-491759592a6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/MainViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPLanBasico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPLanPersonalizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPlanPremium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/TipoPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Beneficio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Beneficio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Entrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Entrenador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Gimnasio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Gimnasio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/app/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Inscripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Inscripcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/app/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanBasico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanBasico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanEntrenamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanEntrenamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanPersonalizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanPersonalizado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanPremium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/hello-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "edixonjpinzonr-coder"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;edixonjpinzonr-coder&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/yesidcmorenop-hub/Parcial1.git",
-    "accountId": "0ea82692-c2ce-4f12-ba24-f30a44b5306f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yesidcmorenop-hub/Parcial1.git&quot;,
+    &quot;accountId&quot;: &quot;0ea82692-c2ce-4f12-ba24-f30a44b5306f&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3Jmvi2zmY9WKArjZ9mu4HSeGzV0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,14 +75,30 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "jefreyPinzon",
+    "git-widget-placeholder": "Mi__Rama__Jefrey",
     "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Parcial1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Parcial1" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -60,6 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1790279185426</updated>
       <workItem from="1790279187416" duration="508000" />
+      <workItem from="1790280148189" duration="8001000" />
     </task>
     <servers />
   </component>

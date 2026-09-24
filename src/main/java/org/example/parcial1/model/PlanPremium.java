@@ -1,9 +1,13 @@
 package org.example.parcial1.model;
 
-public class PlanPremium extends PlanEntrenamiento{
+public class PlanPremium extends PlanEntrenamiento {
+
+    public PlanPremium(String nombre, int codigo, String descripcion, int duracionMeses, double valorMensual, Estado estado) {
+        super(nombre, codigo, descripcion, duracionMeses, valorMensual, estado);
+    }
+
     @Override
     public double calcularValorBase() {
-        // Ejemplo de regla de negocio: Aplica un 10% de descuento por ser Premium
         double totalSinDescuento = this.duracionMeses * this.valorMensual;
         return totalSinDescuento * 0.90;
     }

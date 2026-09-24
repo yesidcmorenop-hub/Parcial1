@@ -8,6 +8,35 @@ public class Inscripcion {
     private Cliente cliente;
     private PlanEntrenamiento planEntrenamiento;
     private ArrayList<ServicioAdicional> listServiciosAdicionales;
+
+    /**
+     * constructor de inscripcion
+     * @param fechaInscripcion de inscripcion
+     * @param cliente de inscripcion
+     * @param planEntrenamiento de inscripcion
+     */
+    public Inscripcion(LocalDate fechaInscripcion, Cliente cliente, PlanEntrenamiento planEntrenamiento) {
+        this.fechaInscripcion = fechaInscripcion;
+        this.cliente = cliente;
+        this.planEntrenamiento = planEntrenamiento;
+        this.listServiciosAdicionales = new ArrayList<>();
+    }
+
+    public LocalDate getFechaInscripcion() { return fechaInscripcion; }
+    public void setFechaInscripcion(LocalDate fechaInscripcion) { this.fechaInscripcion = fechaInscripcion; }
+    public Cliente getCliente() { return cliente; }
+    public void setCliente(Cliente cliente) { this.cliente = cliente; }
+    public PlanEntrenamiento getPlanEntrenamiento() { return planEntrenamiento; }
+    public void setPlanEntrenamiento(PlanEntrenamiento planEntrenamiento) { this.planEntrenamiento = planEntrenamiento; }
+    public ArrayList<ServicioAdicional> getListServiciosAdicionales() { return listServiciosAdicionales; }
+
+
+    public void agregarServicioAdicional(ServicioAdicional servicio) {
+        if (servicio != null) {
+            this.listServiciosAdicionales.add(servicio);
+        }
+    }
+
     /**
      * Calcula el costo total final considerando el tipo de plan y los servicios adicionales agregados.
      */

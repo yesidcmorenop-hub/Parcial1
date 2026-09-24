@@ -1,6 +1,6 @@
 package org.example.parcial1.model;
 
-public class Entrenador extends Persona{
+public class Entrenador extends Persona {
     private String especialidad;
     private double tarifa;
 
