@@ -1,10 +1,14 @@
 package org.example.parcial1.model;
 
-public class PlanEntrenamiento {
-    private String nombre;
-    private int codigo;
-    private String descripcion;
-    private int duracionMeses;
-    private double valorMensual;
-    private Estado estado;
+public abstract class PlanEntrenamiento {
+    protected String nombre;
+    protected int codigo;
+    protected String descripcion;
+    protected int duracionMeses;
+    protected double valorMensual;
+    protected Estado estado;
+    /**
+     * Método para calcular el valor base del plan según su tipo.
+     */
+    public abstract double calcularValorBase();
 }

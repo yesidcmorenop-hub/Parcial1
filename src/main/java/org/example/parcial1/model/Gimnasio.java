@@ -1,5 +1,6 @@
 package org.example.parcial1.model;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Gimnasio {
@@ -58,5 +59,61 @@ public class Gimnasio {
 
     public void setPaginaWeb(String paginaWeb) {
         this.paginaWeb = paginaWeb;
+    }
+
+    /**
+     * Busca un cliente mediante su número de teléfono.
+     */
+    public Cliente buscarClientePorTelefono(int telefonoBusqueda) {
+        for (Cliente cliente : this.listCliente) {
+            if (cliente.getTelefono() == telefonoBusqueda) {
+                return cliente;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Recorre las inscripciones y acumula los ingresos dentro de un período determinado.
+     */
+    public double calcularIngresosPeriodo(LocalDate fechaInicio, LocalDate fechaFin) {
+        double ingresosTotales = 0.0;
+        for (Inscripcion inscripcion : this.listInscripcion) {
+            if (inscripcion.estaEnPeriodo(fechaInicio, fechaFin)) {
+                ingresosTotales += inscripcion.calcularValorTotal();
+            }
+        }
+        return ingresosTotales;
+    }
+
+    /**
+     * Asigna un entrenador a un plan personalizado.
+     */
+    public boolean asignarEntrenador(Entrenador entrenador, PlanPersonalizado planPersonalizado) {
+        if (entrenador != null && planPersonalizado != null) {
+            planPersonalizado.setEntrenadorAsignado(entrenador);
+            return true;
+        }
+        return false;
+    }
+
+    public void registrarCliente(Cliente cliente) {
+        if (this.listCliente == null) this.listCliente = new ArrayList<>();
+        this.listCliente.add(cliente);
+    }
+
+    public void registrarEntrenador(Entrenador entrenador) {
+        if (this.listEntrenador == null) this.listEntrenador = new ArrayList<>();
+        this.listEntrenador.add(entrenador);
+    }
+
+    public void registrarPlan(PlanEntrenamiento plan) {
+        if (this.listPlanEntrenamiento == null) this.listPlanEntrenamiento = new ArrayList<>();
+        this.listPlanEntrenamiento.add(plan);
+    }
+
+    public void registrarInscripcion(Inscripcion inscripcion) {
+        if (this.listInscripcion == null) this.listInscripcion = new ArrayList<>();
+        this.listInscripcion.add(inscripcion);
     }
 }

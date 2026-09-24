@@ -1,9 +1,9 @@
 package org.example.parcial1.model;
 
 public abstract class Persona {
-    private String nombre;
-    private int documento;
-    private int telefono;
+    protected String nombre;
+    protected int documento;
+    protected int telefono;
 
     public Persona(String nombre, int documento, int telefono) {
         this.nombre = nombre;

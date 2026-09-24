@@ -34,4 +34,26 @@ public class PlanPersonalizado extends PlanEntrenamiento{
     public void setObjetivosCliente(String objetivosCliente) {
         this.objetivosCliente = objetivosCliente;
     }
+
+    // Atributo para asociar el entrenador al plan personalizado
+
+    private Entrenador entrenadorAsignado;
+
+    public Entrenador getEntrenadorAsignado() {
+        return entrenadorAsignado;
+    }
+
+    public void setEntrenadorAsignado(Entrenador entrenadorAsignado) {
+        this.entrenadorAsignado = entrenadorAsignado;
+    }
+
+    @Override
+    public double calcularValorBase() {
+        double valorPlan = this.duracionMeses * this.valorMensual;
+        double costoSesiones = 0.0;
+        if (this.entrenadorAsignado != null) {
+            costoSesiones = this.cantidadSeciones * this.entrenadorAsignado.getTarifa();
+        }
+        return valorPlan + costoSesiones;
+    }
 }

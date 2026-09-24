@@ -7,8 +7,8 @@ public class Cliente extends Persona{
     private String correo;
     private int edad;
     private LocalDate fechaIngreso;
-    private ArrayList<Planes> listPlanes;
-    private ArrayList<Inscripcion> listInscripciones;
+    private ArrayList<PlanEntrenamiento> listPlanEntrenamiento;
+    private ArrayList<Inscripcion> listInscripcion;
 
 
     public Cliente(String nombre, int documento, int telefono, String correo, int edad, LocalDate fechaIngreso) {
@@ -40,5 +40,21 @@ public class Cliente extends Persona{
 
     public void setFechaIngreso(LocalDate fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
+    }
+    /**
+     *  Metodo que verifica si el numero de teléfono del cliente es un numero perfecto.
+     *
+     */
+    public boolean telefonoPerfecto() {
+        if (this.telefono <= 1) {
+            return false;
+        }
+        int sumaDivisores = 0;
+        for (int i = 1; i <= this.telefono / 2; i++) {
+            if (this.telefono % i == 0) {
+                sumaDivisores += i;
+            }
+        }
+        return sumaDivisores == this.telefono;
     }
 }
