@@ -17,7 +17,7 @@ public class Gimnasio {
 
     private static Gimnasio instance;
 
-    public Gimnasio(String nombre, int nit, int telefono, String correo, String paginaWeb) {
+    private Gimnasio(String nombre, int nit, int telefono, String correo, String paginaWeb) {
         this.nombre = nombre;
         this.nit = nit;
         this.telefono = telefono;
