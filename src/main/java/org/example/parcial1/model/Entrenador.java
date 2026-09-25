@@ -24,4 +24,9 @@ public class Entrenador extends Persona {
     public void setTarifa(double tarifa) {
         this.tarifa = tarifa;
     }
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + "-- Especialidad: " + especialidad;
+    }
 }

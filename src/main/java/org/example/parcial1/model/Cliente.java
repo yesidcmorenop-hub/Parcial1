@@ -52,6 +52,11 @@ public class Cliente extends Persona {
         return listInscripcion;
     }
 
+    @Override
+    public String toString() {
+        return  "Nombre: " +nombre + " (ID: " + documento + ")";
+    }
+
     /**
      *  Metodo que verifica si el numero de teléfono del cliente es un numero perfecto.
      *

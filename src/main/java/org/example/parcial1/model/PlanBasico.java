@@ -10,4 +10,9 @@ public class PlanBasico extends PlanEntrenamiento {
     public double calcularValorBase() {
         return this.duracionMeses * this.valorMensual;
     }
+
+    @Override
+    public String toString() {
+        return "Plan Basico: "+nombre + " ($" + calcularValorBase() + ")";
+    }
 }

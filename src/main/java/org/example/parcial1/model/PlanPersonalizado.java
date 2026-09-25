@@ -103,4 +103,9 @@ public class PlanPersonalizado extends PlanEntrenamiento {
             return new PlanPersonalizado(this);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Plan Personalizado: "+nombre + " ($" + calcularValorBase() + ")";
+    }
 }
