@@ -59,7 +59,9 @@ public class PlanEntrenamientoViewController implements Initializable {
 
         // Mapeo de columnas estándar
         colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
-        colPrecio.setCellValueFactory(new PropertyValueFactory<>("valorMensual"));
+        colPrecio.setCellValueFactory(cellData ->
+                new javafx.beans.property.SimpleDoubleProperty(cellData.getValue().calcularValorBase()).asObject()
+        );
         colCodigo.setCellValueFactory(new PropertyValueFactory<>("codigo"));
 
         colTipo.setCellValueFactory(cellData -> {
@@ -111,10 +113,9 @@ public class PlanEntrenamientoViewController implements Initializable {
         }
 
         try {
-            double precio = Double.parseDouble(precioStr);
+            double valorMensual = Double.parseDouble(precioStr);
             int codigo = Integer.parseInt(codigoStr);
 
-            // Valores por defecto para atributos generales no capturados en el formulario
             String descripcion = "Plan " + tipo.getNombreMostrar();
             int duracionMeses = 1;
             Estado estado = Estado.ACTIVO;
@@ -139,17 +140,24 @@ public class PlanEntrenamientoViewController implements Initializable {
                 }
 
                 int sesiones = Integer.parseInt(sesionesStr);
-
-                // Se usa el constructor parametrizado del Factory personalizado que diseñaste
                 factory = new FactoryPLanPersonalizado(sesiones, especialidad, objetivos, entrenador);
             }
 
             if (factory != null) {
-                // Creacion polimorfica del plan a traves de la interfaz FactoryPlan
-                PlanEntrenamiento nuevoPlan = factory.crearPlan(nombre, codigo, descripcion, duracionMeses, precio, estado);
+                // 1. Se crea la instancia usando la fábrica
+                PlanEntrenamiento nuevoPlan = factory.crearPlan(nombre, codigo, descripcion, duracionMeses, valorMensual, estado);
+
+                // 2. Si es personalizado, le vinculamos el entrenador asignado al objeto
+                if (nuevoPlan instanceof PlanPersonalizado) {
+                    Entrenador entrenador = cmbEntrenador.getValue();
+                    ((PlanPersonalizado) nuevoPlan).setEntrenadorAsignado(entrenador);
+                }
+
+                double valorCalculado = nuevoPlan.calcularValorBase();
 
                 gimnasio.registrarPlan(nuevoPlan);
-                mostrarAlerta("Éxito", "El plan se ha registrado correctamente.", Alert.AlertType.INFORMATION);
+                mostrarAlerta("Éxito", "El plan se registró correctamente. Valor base calculado por el modelo: $" + valorCalculado, Alert.AlertType.INFORMATION);
+
                 limpiarFormulario();
                 actualizarTabla();
             }

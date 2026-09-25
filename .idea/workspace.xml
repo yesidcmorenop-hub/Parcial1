@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7627def1-822e-47b2-988c-491759592a6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/app/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/ClienteViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/EntrenadorViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/InscripcionViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/PlanEntrenamientoViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/ReportesViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/EntrenadorView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/cliente.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/inscripcion-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/main.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/planEntrenamiento.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/reportes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/app/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/app/Launcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/MainViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Entrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Entrenador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Gimnasio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Gimnasio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanEntrenamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanEntrenamiento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/ServicioAdicional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/ServicioAdicional.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/PlanEntrenamientoViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/PlanEntrenamientoViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/planEntrenamiento.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/planEntrenamiento.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Mi_Rama_Camilo" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -65,6 +49,10 @@
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -87,23 +75,14 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "Mi__Rama__Jefrey",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Parcial1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Parcial1" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
