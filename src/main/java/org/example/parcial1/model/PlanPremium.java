@@ -11,4 +11,9 @@ public class PlanPremium extends PlanEntrenamiento {
         double totalSinDescuento = this.duracionMeses * this.valorMensual;
         return totalSinDescuento * 0.90;
     }
+
+    @Override
+    public String toString() {
+        return "Plan Premium: "+nombre + " ($" + calcularValorBase() + ")";
+    }
 }
