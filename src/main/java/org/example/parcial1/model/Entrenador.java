@@ -9,7 +9,6 @@ public class Entrenador extends Persona {
         this.especialidad = especialidad;
         this.tarifa = tarifa;
     }
-
     public String getEspecialidad() {
         return especialidad;
     }

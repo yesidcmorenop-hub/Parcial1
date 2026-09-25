@@ -5,29 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7627def1-822e-47b2-988c-491759592a6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/MainViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPLanBasico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPLanPersonalizado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPlanPremium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/TipoPlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/app/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/ClienteViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/EntrenadorViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/InscripcionViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/PlanEntrenamientoViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/ReportesViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/EntrenadorView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/cliente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/inscripcion-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/main.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/planEntrenamiento.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/reportes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Beneficio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Beneficio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/app/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/app/Launcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/MainViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/factory/FactoryPlan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Entrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Entrenador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Gimnasio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Gimnasio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/app/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Inscripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Inscripcion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/app/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanBasico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanBasico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanEntrenamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanEntrenamiento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanPersonalizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanPersonalizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/PlanPremium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/ServicioAdicional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/model/ServicioAdicional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -75,6 +77,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AppTest.executor": "Run",
+    "Application.HelloApplication.executor": "Run",
+    "Application.Launcher.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -115,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1790279185426</updated>
       <workItem from="1790279187416" duration="508000" />
-      <workItem from="1790280148189" duration="8001000" />
+      <workItem from="1790280148189" duration="20459000" />
     </task>
     <servers />
   </component>

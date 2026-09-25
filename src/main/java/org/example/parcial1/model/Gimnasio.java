@@ -10,19 +10,13 @@ public class Gimnasio {
     private String correo;
     private String paginaWeb;
     private ArrayList<Cliente> listCliente;
-    private ArrayList<Inscripcion>listInscripcion;
-    private ArrayList<PlanEntrenamiento>listPlanEntrenamiento;
-    private ArrayList<Entrenador>listEntrenador;
+    private ArrayList<Inscripcion> listInscripcion;
+    private ArrayList<PlanEntrenamiento> listPlanEntrenamiento;
+    private ArrayList<Entrenador> listEntrenador;
+    private ArrayList<ServicioAdicional> listServiciosAdicionales;
+
     private static Gimnasio instance;
 
-    /**
-     * constructor de gimnasio
-     * @param nombre de gimnasio
-     * @param nit de gimnasio
-     * @param telefono de gimnasio
-     * @param correo de gimnasio
-     * @param paginaWeb de gimnasio
-     */
     public Gimnasio(String nombre, int nit, int telefono, String correo, String paginaWeb) {
         this.nombre = nombre;
         this.nit = nit;
@@ -33,95 +27,84 @@ public class Gimnasio {
         this.listInscripcion = new ArrayList<>();
         this.listPlanEntrenamiento = new ArrayList<>();
         this.listEntrenador = new ArrayList<>();
+        this.listServiciosAdicionales = new ArrayList<>();
     }
 
-    /**
-     * creacion de la instancia unica de Gimnasio
-     * @return instancia
-     */
     public static Gimnasio getInstance() {
         if (instance == null) {
-            instance=new Gimnasio("Gimnacio Pa Flacos",10101001,
-                    222,"Gimnacio@","gimnacio.com");
+            instance = new Gimnasio("SmartGym", 10101001, 628, "contacto@smartgym.com", "www.smartgym.com");
+            instance.cargarDatosPrueba();
         }
         return instance;
     }
 
-    public String getNombre() {
-        return nombre;
+    private void cargarDatosPrueba() {
+        // Instanciación usando el enum TipoServicio y tu constructor
+        ServicioAdicional s1 = new ServicioAdicional(
+                TipoServicio.VALORACION_FISICA, "SA01", "Valoración Física",
+                "Evaluación de composición corporal", 30000.0, true
+        );
+        ServicioAdicional s2 = new ServicioAdicional(
+                TipoServicio.ASESORIA_NUTRICIONAL, "SA02", "Asesoría Nutricional",
+                "Plan alimenticio personalizado", 50000.0, true
+        );
+        ServicioAdicional s3 = new ServicioAdicional(
+                TipoServicio.CLASES_ESPECIALES, "SA03", "Clase Especial Spin",
+                "Acceso a masterclass de spinning", 20000.0, true
+        );
+
+        this.listServiciosAdicionales.add(s1);
+        this.listServiciosAdicionales.add(s2);
+        this.listServiciosAdicionales.add(s3);
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    // --- GETTERS Y SETTERS ---
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+
+    public int getTelefono() { return telefono; }
+    public void setTelefono(int telefono) { this.telefono = telefono; }
+
+    public int getNit() { return nit; }
+    public void setNit(int nit) { this.nit = nit; }
+
+    public String getCorreo() { return correo; }
+    public void setCorreo(String correo) { this.correo = correo; }
+
+    public String getPaginaWeb() { return paginaWeb; }
+    public void setPaginaWeb(String paginaWeb) { this.paginaWeb = paginaWeb; }
+
+    public ArrayList<Cliente> getListCliente() { return listCliente; }
+    public void setListCliente(ArrayList<Cliente> listCliente) { this.listCliente = listCliente; }
+
+    public ArrayList<Inscripcion> getListInscripcion() { return listInscripcion; }
+    public void setListInscripcion(ArrayList<Inscripcion> listInscripcion) { this.listInscripcion = listInscripcion; }
+
+    public ArrayList<PlanEntrenamiento> getListPlanEntrenamiento() { return listPlanEntrenamiento; }
+    public void setListPlanEntrenamiento(ArrayList<PlanEntrenamiento> listPlanEntrenamiento) { this.listPlanEntrenamiento = listPlanEntrenamiento; }
+
+    public ArrayList<Entrenador> getListEntrenador() { return listEntrenador; }
+    public void setListEntrenador(ArrayList<Entrenador> listEntrenador) { this.listEntrenador = listEntrenador; }
+
+    public ArrayList<ServicioAdicional> getListServiciosAdicionales() { return listServiciosAdicionales; }
+    public void setListServiciosAdicionales(ArrayList<ServicioAdicional> listServiciosAdicionales) { this.listServiciosAdicionales = listServiciosAdicionales; }
+
+    // --- MÉTODOS DE NEGOCIO ---
+    public void registrarServicioAdicional(ServicioAdicional servicio) {
+        if (servicio != null && !this.listServiciosAdicionales.contains(servicio)) {
+            this.listServiciosAdicionales.add(servicio);
+        }
     }
 
-    public int getTelefono() {
-        return telefono;
+    public Cliente buscarClientePorDocumento(int documento) {
+        for (Cliente c : this.listCliente) {
+            if (c.getDocumento() == documento) {
+                return c;
+            }
+        }
+        return null;
     }
 
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
-
-    public int getNit() {
-        return nit;
-    }
-
-    public void setNit(int nit) {
-        this.nit = nit;
-    }
-
-    public String getCorreo() {
-        return correo;
-    }
-
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
-
-    public String getPaginaWeb() {
-        return paginaWeb;
-    }
-
-    public void setPaginaWeb(String paginaWeb) {
-        this.paginaWeb = paginaWeb;
-    }
-
-    public ArrayList<Cliente> getListCliente() {
-        return listCliente;
-    }
-
-    public void setListCliente(ArrayList<Cliente> listCliente) {
-        this.listCliente = listCliente;
-    }
-
-    public ArrayList<Inscripcion> getListInscripcion() {
-        return listInscripcion;
-    }
-
-    public void setListInscripcion(ArrayList<Inscripcion> listInscripcion) {
-        this.listInscripcion = listInscripcion;
-    }
-
-    public ArrayList<PlanEntrenamiento> getListPlanEntrenamiento() {
-        return listPlanEntrenamiento;
-    }
-
-    public void setListPlanEntrenamiento(ArrayList<PlanEntrenamiento> listPlanEntrenamiento) {
-        this.listPlanEntrenamiento = listPlanEntrenamiento;
-    }
-
-    public ArrayList<Entrenador> getListEntrenador() {
-        return listEntrenador;
-    }
-
-    public void setListEntrenador(ArrayList<Entrenador> listEntrenador) {
-        this.listEntrenador = listEntrenador;
-    }
-
-    /**
-     * Busca un cliente mediante su número de teléfono.
-     */
     public Cliente buscarClientePorTelefono(int telefonoBusqueda) {
         for (Cliente cliente : this.listCliente) {
             if (cliente.getTelefono() == telefonoBusqueda) {
@@ -131,9 +114,27 @@ public class Gimnasio {
         return null;
     }
 
-    /**
-     * Recorre las inscripciones y acumula los ingresos dentro de un período determinado.
-     */
+    public boolean registrarCliente(Cliente cliente) {
+        if (cliente != null && buscarClientePorDocumento(cliente.getDocumento()) == null) {
+            this.listCliente.add(cliente);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean esNumeroPerfecto(int numero) {
+        if (numero <= 1) {
+            return false;
+        }
+        int sumaDivisores = 0;
+        for (int i = 1; i <= numero / 2; i++) {
+            if (numero % i == 0) {
+                sumaDivisores += i;
+            }
+        }
+        return sumaDivisores == numero;
+    }
+
     public double calcularIngresosPeriodo(LocalDate fechaInicio, LocalDate fechaFin) {
         double ingresosTotales = 0.0;
         for (Inscripcion inscripcion : this.listInscripcion) {
@@ -144,9 +145,6 @@ public class Gimnasio {
         return ingresosTotales;
     }
 
-    /**
-     * Asigna un entrenador a un plan personalizado.
-     */
     public boolean asignarEntrenador(Entrenador entrenador, PlanPersonalizado planPersonalizado) {
         if (entrenador != null && planPersonalizado != null) {
             planPersonalizado.setEntrenadorAsignado(entrenador);
@@ -155,42 +153,18 @@ public class Gimnasio {
         return false;
     }
 
-    /**
-     * metodo para registrar a un cliente
-     * @param cliente
-     */
-    public void registrarCliente(Cliente cliente) {
-        if (cliente!= null && !this.listCliente.contains(cliente)) {
-            this.listCliente.add(cliente);
-        }
-
-    }
-
-    /**
-     * metodo para registrar a un entrenador
-     * @param entrenador
-     */
     public void registrarEntrenador(Entrenador entrenador) {
         if (entrenador != null && !this.listEntrenador.contains(entrenador)) {
             this.listEntrenador.add(entrenador);
         }
-
     }
 
-    /**
-     * metodo para registrar un plan
-     * @param plan
-     */
     public void registrarPlan(PlanEntrenamiento plan) {
         if (plan != null && !this.listPlanEntrenamiento.contains(plan)) {
             this.listPlanEntrenamiento.add(plan);
         }
     }
 
-    /**
-     * metodo para registrar una inscripcion
-     * @param inscripcion
-     */
     public void registrarInscripcion(Inscripcion inscripcion) {
         if (inscripcion != null && !this.listInscripcion.contains(inscripcion)) {
             this.listInscripcion.add(inscripcion);

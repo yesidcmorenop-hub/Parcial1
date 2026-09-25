@@ -23,6 +23,10 @@ public abstract class PlanEntrenamiento {
         this.listaBeneficio = new ArrayList<>();
     }
 
+
+
+
+
     public String getNombre() { return nombre; }
     public int getCodigo() { return codigo; }
     public String getDescripcion() { return descripcion; }
@@ -43,3 +47,4 @@ public abstract class PlanEntrenamiento {
      */
     public abstract double calcularValorBase();
 }
+

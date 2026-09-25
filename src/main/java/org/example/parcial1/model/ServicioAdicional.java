@@ -64,4 +64,13 @@ public class ServicioAdicional {
     public void setDisponibilidad(boolean disponibilidad) {
         this.disponibilidad = disponibilidad;
     }
+
+    @Override
+    public String toString() {
+        return "ServicioAdicional{" +
+                "nombre='" + nombre + '\'' +
+                ", precio=" + precio +
+                ", descripcion='" + descripcion + '\'' +
+                '}';
+    }
 }
