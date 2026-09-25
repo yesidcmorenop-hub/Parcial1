@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7627def1-822e-47b2-988c-491759592a6c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/PlanEntrenamientoViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parcial1/controller/PlanEntrenamientoViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/planEntrenamiento.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/parcial1/planEntrenamiento.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +35,12 @@
     &quot;assignee&quot;: &quot;edixonjpinzonr-coder&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/yesidcmorenop-hub/Parcial1.git&quot;,
-    &quot;accountId&quot;: &quot;0ea82692-c2ce-4f12-ba24-f30a44b5306f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/yesidcmorenop-hub/Parcial1.git",
+    "accountId": "eed4a3d9-bb4a-4f38-b771-d1127373763b"
   }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -68,12 +66,13 @@
     "Application.AppTest.executor": "Run",
     "Application.HelloApplication.executor": "Run",
     "Application.Launcher.executor": "Run",
+    "JUnit.EntrenadorTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "Mi__Rama__Jefrey",
+    "git-widget-placeholder": "Mi__Rama__Camilo",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -83,6 +82,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\CAMILO\Documents\Programacion 2\Parcial1\src\main\test" />
+      <recent name="C:\Users\CAMILO\Documents\Programacion 2\Parcial1\src\main\test\java\org\example\parcial1" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
