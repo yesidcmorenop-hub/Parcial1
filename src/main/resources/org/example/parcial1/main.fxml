@@ -5,10 +5,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="409.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.parcial1.controller.MainViewController">
    <children>
-      <Label fx:id="lblNombreGimnasio" layoutX="229.0" layoutY="22.0" prefHeight="32.0" prefWidth="174.0" text="Gimnacio: Iron">
+      <Label fx:id="lblNombreGimnasio" layoutX="187.0" layoutY="23.0" prefHeight="32.0" prefWidth="262.0" text="Gimnacio: Iron">
          <font>
             <Font size="22.0" />
          </font>
@@ -18,7 +17,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="lblContactoGimnasio" layoutX="109.0" layoutY="68.0" text="Contactos: Tel: 222 | Gimnacio@ | gimnacio.com">
+      <Label fx:id="lblContactoGimnasio" layoutX="26.0" layoutY="67.0" prefHeight="27.0" prefWidth="560.0" text="Contactos: Tel: 222 | Gimnacio@ | gimnacio.com">
          <font>
             <Font size="18.0" />
          </font>
