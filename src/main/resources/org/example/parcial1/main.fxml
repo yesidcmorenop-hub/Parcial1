@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="409.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.parcial1.controller.MainViewController">
+   <children>
+      <Label fx:id="lblNombreGimnasio" layoutX="187.0" layoutY="23.0" prefHeight="32.0" prefWidth="262.0" text="Gimnacio: Iron">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNitGimnasio" layoutX="457.0" layoutY="25.0" text="NIT: 101010">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblContactoGimnasio" layoutX="26.0" layoutY="67.0" prefHeight="27.0" prefWidth="560.0" text="Contactos: Tel: 222 | Gimnacio@ | gimnacio.com">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="221.0" layoutY="136.0" mnemonicParsing="false" onAction="#irAClientes" text="Gestion de Clientes">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="163.0" layoutY="188.0" mnemonicParsing="false" onAction="#irAPlanes" text="Geston de Planes de Entrenamiento">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="202.0" layoutY="240.0" mnemonicParsing="false" onAction="#irAEntrenadores" text="Gestion de Entrenadores">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="203.0" layoutY="296.0" mnemonicParsing="false" onAction="#irAInscripciones" text="Gestion de inscripciones">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="218.0" layoutY="355.0" mnemonicParsing="false" onAction="#irAReportes" text="Gestion de Reportes">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

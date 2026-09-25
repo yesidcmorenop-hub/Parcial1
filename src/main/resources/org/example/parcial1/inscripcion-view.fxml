@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.parcial1.controller.InscripcionViewController">
+    <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onVolverMenu" text="&lt;- Volver" />
+
+        <Label layoutX="220.0" layoutY="18.0" style="-fx-font-weight: bold;" text="Gestión de Inscripciones y Servicios">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+
+        <!-- Panel Izquierdo: Formulario de Nueva Inscripción -->
+        <Label layoutX="30.0" layoutY="60.0" style="-fx-font-weight: bold;" text="1. Seleccionar Datos Principales" />
+
+        <Label layoutX="30.0" layoutY="95.0" text="Cliente:" />
+        <ComboBox fx:id="cbCliente" layoutX="110.0" layoutY="90.0" prefWidth="220.0" promptText="Seleccione Cliente" />
+
+        <Label layoutX="30.0" layoutY="135.0" text="Plan:" />
+        <ComboBox fx:id="cbPlan" layoutX="110.0" layoutY="130.0" onAction="#onPlanSeleccionado" prefWidth="220.0" promptText="Seleccione Plan" />
+
+        <Label layoutX="30.0" layoutY="175.0" text="Fecha:" />
+        <DatePicker fx:id="dpFechaInscripcion" layoutX="110.0" layoutY="170.0" prefWidth="220.0" />
+
+        <!-- Panel Derecho: Servicios Adicionales -->
+        <Label layoutX="380.0" layoutY="60.0" style="-fx-font-weight: bold;" text="2. Servicios Adicionales Disponibles" />
+
+        <ListView fx:id="lvServiciosDisponibles" layoutX="380.0" layoutY="90.0" prefHeight="110.0" prefWidth="240.0" />
+        <Button layoutX="630.0" layoutY="130.0" mnemonicParsing="false" onAction="#onAgregarServicio" text="Agregar -&gt;" />
+
+        <Label layoutX="380.0" layoutY="215.0" text="Servicios Incluidos en esta Inscripción:" />
+        <ListView fx:id="lvServiciosAgregados" layoutX="380.0" layoutY="235.0" prefHeight="80.0" prefWidth="340.0" />
+
+        <!-- Panel de Totales y Registrar -->
+        <Label layoutX="30.0" layoutY="220.0" style="-fx-font-weight: bold;" text="Resumen del Pago:" />
+        <Label layoutX="30.0" layoutY="250.0" text="Valor Base Plan: " />
+        <Label fx:id="lblValorPlan" layoutX="140.0" layoutY="250.0" style="-fx-font-weight: bold;" text="\$ 0.0" />
+
+        <Label layoutX="30.0" layoutY="280.0" text="Total a Pagar: " />
+        <Label fx:id="lblTotalPagar" layoutX="140.0" layoutY="278.0" text="\$ 0.0" textFill="#0d8a18">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="30.0" layoutY="315.0" mnemonicParsing="false" onAction="#onRegistrarInscripcion" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #2e7d32; -fx-text-fill: white; -fx-font-weight: bold;" text="Registrar Inscripción" />
+
+        <!-- Tabla de Inscripciones Realizadas -->
+        <Label layoutX="30.0" layoutY="365.0" style="-fx-font-weight: bold;" text="Historial de Inscripciones" />
+        <TableView fx:id="tblInscripciones" layoutX="30.0" layoutY="390.0" prefHeight="140.0" prefWidth="690.0">
+            <columns>
+                <TableColumn fx:id="colCliente" prefWidth="180.0" text="Cliente" />
+                <TableColumn fx:id="colPlan" prefWidth="180.0" text="Plan" />
+                <TableColumn fx:id="colFecha" prefWidth="130.0" text="Fecha" />
+                <TableColumn fx:id="colServicios" prefWidth="100.0" text="Cant. Serv." />
+                <TableColumn fx:id="colTotal" prefWidth="100.0" text="Total ($)" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
