@@ -134,12 +134,23 @@ public class PlanEntrenamientoViewController implements Initializable {
                 String objetivos = txtObjetivos.getText().trim();
                 Entrenador entrenador = cmbEntrenador.getValue();
 
-                if (sesionesStr.isEmpty() || especialidad.isEmpty() || objetivos.isEmpty()) {
-                    mostrarAlerta("Campos Requeridos", "Complete los campos del Plan Personalizado.", Alert.AlertType.WARNING);
-                    return;
+                int sesiones = 0;
+                if (!sesionesStr.isEmpty()) {
+                    try {
+                        sesiones = Integer.parseInt(sesionesStr);
+                    } catch (NumberFormatException e) {
+                        mostrarAlerta("Error de Formato", "La cantidad de sesiones debe ser un número entero válido.", Alert.AlertType.ERROR);
+                        return;
+                    }
                 }
 
-                int sesiones = Integer.parseInt(sesionesStr);
+                if (especialidad.isEmpty()) {
+                    especialidad = "General";
+                }
+                if (objetivos.isEmpty()) {
+                    objetivos = "Sin especificar";
+                }
+
                 factory = new FactoryPLanPersonalizado(sesiones, especialidad, objetivos, entrenador);
             }
 
